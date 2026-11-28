@@ -9,6 +9,27 @@ with a formally verified checker before answering. Your checker (CBMC here) prin
 Only the numbered SAT formula leaves your machine. No source code, file names or variable
 names; formulas with comment lines are refused.
 
+## No CBMC? Try it in 10 seconds
+
+Connect your AI agent to Levin's MCP server (no sign-in) and ask it to call `levin_try`:
+a real check, answered and certified by Levin in about ten seconds, with nothing to install.
+
+```
+claude mcp add --transport http levin https://mcp.commandersolver.com/mcp
+```
+
+Other clients that connect to remote servers:
+
+```json
+{ "mcpServers": { "levin": { "url": "https://mcp.commandersolver.com/mcp" } } }
+```
+
+Clients that only run local servers can use a bridge:
+
+```json
+{ "mcpServers": { "levin": { "command": "npx", "args": ["-y", "mcp-remote", "https://mcp.commandersolver.com/mcp"] } } }
+```
+
 ## Feel it in one command
 
 You need **CBMC** installed (`cbmc --version`). Then, from the repo root:
