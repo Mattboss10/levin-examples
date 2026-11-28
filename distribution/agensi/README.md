@@ -1,3 +1,3 @@
 # Agensi package
 
-The zip and logo uploaded to Agensi (https://agensi.io/sell): a skill file for non-Claude agents with the same levin-sat script as the Claude Code plugin. Free, non-exclusive.
+speed-up-cbmc-kani-proofs.zip: a standalone skill that speeds up CBMC and Kani with local open-source solvers (kissat, cadical) and can verify each 'no bug' answer's proof with drat-trim. No network access. logo-512.png: its logo.
